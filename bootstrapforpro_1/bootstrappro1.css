@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* Navbar styling */
+.navbar{
+    background-color: #E55807 !important;
+}
+.nav-link{
+    color: #fff !important;
+    margin-left: 20px;
+}
+.smacelogo{
+    color: #482121 !important;
+    font-weight: bolder !important;
+    margin-left: 0;
+    font-size: larger;
+}
+.nav-link:hover{
+    color: #482121 !important;
+    animation: rotateAnimation 3s infinite;
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-brand img{
+    width: 70px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+/* carousel styling */
+.carousel-item::before{
+    content: "";
+    background: black;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.carousel-item img{
+    height: 500px !important;
+}
+.carousel-caption h5, p{
+    color: #E55807;
+}
+
+/* About Us styling */
+.divider{
+    width: 100px;
+    height: 8px;
+    background-color: #482121;
+    margin: 10px auto;
+}
+.stabt{
+    text-shadow: #482121;
+    text-size-adjust: 300px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+/* Activities styling */
+.card{
+    cursor: pointer;
+}
+.card:hover{
+    background-color: blue;
+}
+/* Contact styling */
+.blog{
+    background: linear-gradient(rgb(219, 129, 12));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Media query */
+@media screen and (max-width: 480px) {
+    .carousel-item img{
+        height: 300px !important;
+    }
+}
