@@ -2,40 +2,46 @@
 
 
 /* Navbar styling */
-.navbar{
+.navbar {
     background-color: #E55807 !important;
 }
-.nav-link{
+
+.nav-link {
     color: #fff !important;
     margin-left: 20px;
 }
-.smacelogo{
+
+.smacelogo {
     color: #482121 !important;
     font-weight: bolder !important;
     margin-left: 0;
     font-size: larger;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #482121 !important;
     animation: rotateAnimation 3s infinite;
 }
+
 @keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 70px;
     height: 35px;
     margin: 0;
     padding: 0;
 }
+
 /* carousel styling */
-.carousel-item::before{
+.carousel-item::before {
     content: "";
     background: black;
     opacity: 0.4;
@@ -46,21 +52,25 @@
     left: 0;
     right: 0;
 }
-.carousel-item img{
+
+.carousel-item img {
     height: 500px !important;
 }
-.carousel-caption h5, p{
+
+.carousel-caption h5,
+p {
     color: #E55807;
 }
 
 /* About Us styling */
-.divider{
+.divider {
     width: 100px;
     height: 8px;
     background-color: #482121;
     margin: 10px auto;
 }
-.stabt{
+
+.stabt {
     text-shadow: #482121;
     text-size-adjust: 300px;
     font-weight: bolder;
@@ -68,17 +78,70 @@
 }
 
 /* Activities styling */
-.card{
+.card {
     cursor: pointer;
 }
-.card:hover{
+
+.card:hover {
     background-color: blue;
 }
+
 /* Contact styling */
-.blog{
+.blog {
     background: linear-gradient(rgb(219, 129, 12));
 }
 
+#suncard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+#btt {
+    top: 30px;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+#btt:hover {
+    background-color: darkred;
+}
+
+/* Blogstyling */
+#blog {
+    margin-top: 30px;
+    background: linear-gradient(rgba(179, 39, 4, 0.2), rgba(179, 39, 4, 0.7)), url('../slideshowimgs/angviewchurchimg.png');
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    height: 190vh;
+    background-attachment: fixed;
+}
+.blogcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blogcont img{
+    max-width: 100%;
+    max-height: 70%;
+}
+.ctb{
+    font-size: 24px;
+    font-weight: 800;
+    color: darkblue;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+.cent-btn{
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+}
 
 
 
@@ -126,7 +189,7 @@
 
 /*  Media query */
 @media screen and (max-width: 480px) {
-    .carousel-item img{
+    .carousel-item img {
         height: 300px !important;
     }
 }
